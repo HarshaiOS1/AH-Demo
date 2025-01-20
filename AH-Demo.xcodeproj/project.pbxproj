@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		3A0EB0682D3D94C100B4FA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0672D3D94C100B4FA73 /* AppDelegate.swift */; };
 		3A0EB06A2D3D94C100B4FA73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0692D3D94C100B4FA73 /* SceneDelegate.swift */; };
-		3A0EB06C2D3D94C100B4FA73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB06B2D3D94C100B4FA73 /* ViewController.swift */; };
+		3A0EB06C2D3D94C100B4FA73 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB06B2D3D94C100B4FA73 /* OverviewViewController.swift */; };
 		3A0EB0712D3D94C200B4FA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0702D3D94C200B4FA73 /* Assets.xcassets */; };
 		3A0EB0742D3D94C200B4FA73 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0732D3D94C200B4FA73 /* Base */; };
 		3A0EB07F2D3D94C200B4FA73 /* AH_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB07E2D3D94C200B4FA73 /* AH_DemoTests.swift */; };
 		3A0EB0892D3D94C200B4FA73 /* AH_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0882D3D94C200B4FA73 /* AH_DemoUITests.swift */; };
 		3A0EB08B2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB08A2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift */; };
+		3A0EB09E2D3E903100B4FA73 /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */; };
+		3A0EB0A12D3E906E00B4FA73 /* ArtificatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A02D3E906E00B4FA73 /* ArtificatsCell.swift */; };
+		3A0EB0A32D3E90AC00B4FA73 /* ArtifactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A22D3E90AC00B4FA73 /* ArtifactsModel.swift */; };
+		3A0EB0A52D3E913300B4FA73 /* RijksAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A42D3E913300B4FA73 /* RijksAPIService.swift */; };
+		3A0EB0A92D3E916700B4FA73 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A82D3E916700B4FA73 /* NetworkError.swift */; };
+		3A0EB0AB2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */; };
+		3A0EB0AD2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */; };
+		3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */; };
+		3A0EB0B32D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */; };
+		3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,7 @@
 		3A0EB0642D3D94C100B4FA73 /* AH-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AH-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0EB0672D3D94C100B4FA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0EB0692D3D94C100B4FA73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A0EB06B2D3D94C100B4FA73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A0EB06B2D3D94C100B4FA73 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		3A0EB0702D3D94C200B4FA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0EB0732D3D94C200B4FA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0EB0752D3D94C200B4FA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +57,16 @@
 		3A0EB0842D3D94C200B4FA73 /* AH-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AH-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0EB0882D3D94C200B4FA73 /* AH_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AH_DemoUITests.swift; sourceTree = "<group>"; };
 		3A0EB08A2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AH_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
+		3A0EB0A02D3E906E00B4FA73 /* ArtificatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtificatsCell.swift; sourceTree = "<group>"; };
+		3A0EB0A22D3E90AC00B4FA73 /* ArtifactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsModel.swift; sourceTree = "<group>"; };
+		3A0EB0A42D3E913300B4FA73 /* RijksAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksAPIService.swift; sourceTree = "<group>"; };
+		3A0EB0A82D3E916700B4FA73 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelProtocol.swift; sourceTree = "<group>"; };
+		3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
+		3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetechArtifactsUseCases.swift; sourceTree = "<group>"; };
+		3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +119,10 @@
 			children = (
 				3A0EB0672D3D94C100B4FA73 /* AppDelegate.swift */,
 				3A0EB0692D3D94C100B4FA73 /* SceneDelegate.swift */,
-				3A0EB06B2D3D94C100B4FA73 /* ViewController.swift */,
+				3A0EB0982D3E8C0800B4FA73 /* Data */,
+				3A0EB0B12D3E923100B4FA73 /* Domain */,
+				3A0EB0972D3E850300B4FA73 /* Presentation */,
+				3A0EB0AE2D3E91F600B4FA73 /* Utils */,
 				3A0EB0702D3D94C200B4FA73 /* Assets.xcassets */,
 				3A0EB0722D3D94C200B4FA73 /* LaunchScreen.storyboard */,
 				3A0EB0752D3D94C200B4FA73 /* Info.plist */,
@@ -122,6 +145,109 @@
 				3A0EB08A2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift */,
 			);
 			path = "AH-DemoUITests";
+			sourceTree = "<group>";
+		};
+		3A0EB0972D3E850300B4FA73 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB09F2D3E904400B4FA73 /* Views */,
+				3A0EB09C2D3E901D00B4FA73 /* ViewModels */,
+				3A0EB09B2D3E901100B4FA73 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3A0EB0982D3E8C0800B4FA73 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A72D3E915000B4FA73 /* Network */,
+				3A0EB0A62D3E913D00B4FA73 /* Service */,
+				3A0EB09A2D3E8C3000B4FA73 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A0EB09A2D3E8C3000B4FA73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A22D3E90AC00B4FA73 /* ArtifactsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A0EB09B2D3E901100B4FA73 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB06B2D3D94C100B4FA73 /* OverviewViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3A0EB09C2D3E901D00B4FA73 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */,
+				3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3A0EB09F2D3E904400B4FA73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A02D3E906E00B4FA73 /* ArtificatsCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A0EB0A62D3E913D00B4FA73 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A42D3E913300B4FA73 /* RijksAPIService.swift */,
+				3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3A0EB0A72D3E915000B4FA73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A82D3E916700B4FA73 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3A0EB0AE2D3E91F600B4FA73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0B72D3EE7FE00B4FA73 /* Extensions */,
+				3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */,
+				3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3A0EB0B12D3E923100B4FA73 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0B42D3EE7A500B4FA73 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3A0EB0B42D3EE7A500B4FA73 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3A0EB0B72D3EE7FE00B4FA73 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +380,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0EB06C2D3D94C100B4FA73 /* ViewController.swift in Sources */,
+				3A0EB0AB2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift in Sources */,
+				3A0EB06C2D3D94C100B4FA73 /* OverviewViewController.swift in Sources */,
+				3A0EB0A92D3E916700B4FA73 /* NetworkError.swift in Sources */,
+				3A0EB0A12D3E906E00B4FA73 /* ArtificatsCell.swift in Sources */,
+				3A0EB0B32D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift in Sources */,
+				3A0EB09E2D3E903100B4FA73 /* OverviewViewModel.swift in Sources */,
 				3A0EB0682D3D94C100B4FA73 /* AppDelegate.swift in Sources */,
+				3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */,
 				3A0EB06A2D3D94C100B4FA73 /* SceneDelegate.swift in Sources */,
+				3A0EB0AD2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift in Sources */,
+				3A0EB0A32D3E90AC00B4FA73 /* ArtifactsModel.swift in Sources */,
+				3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */,
+				3A0EB0A52D3E913300B4FA73 /* RijksAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
