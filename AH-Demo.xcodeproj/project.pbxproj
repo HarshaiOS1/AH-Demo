@@ -25,6 +25,10 @@
 		3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */; };
 		3A0EB0B32D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */; };
 		3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */; };
+		3A0EB0B92D3FBDB100B4FA73 /* CenturyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */; };
+		3A70852E2D3FC38500FF19E9 /* RijksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */; };
+		3A7085302D3FC39200FF19E9 /* RijksRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */; };
+		3A7085322D40457000FF19E9 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085312D40457000FF19E9 /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
 		3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetechArtifactsUseCases.swift; sourceTree = "<group>"; };
 		3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenturyHeader.swift; sourceTree = "<group>"; };
+		3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksRepository.swift; sourceTree = "<group>"; };
+		3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksRepositoryProtocol.swift; sourceTree = "<group>"; };
+		3A7085312D40457000FF19E9 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +168,9 @@
 		3A0EB0982D3E8C0800B4FA73 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3A0EB0A72D3E915000B4FA73 /* Network */,
 				3A0EB0A62D3E913D00B4FA73 /* Service */,
+				3A70852C2D3FC36400FF19E9 /* Repositories */,
+				3A0EB0A72D3E915000B4FA73 /* Network */,
 				3A0EB09A2D3E8C3000B4FA73 /* Model */,
 			);
 			path = Data;
@@ -196,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				3A0EB0A02D3E906E00B4FA73 /* ArtificatsCell.swift */,
+				3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +233,7 @@
 				3A0EB0B72D3EE7FE00B4FA73 /* Extensions */,
 				3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */,
 				3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */,
+				3A7085312D40457000FF19E9 /* ErrorHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -248,6 +259,15 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A70852C2D3FC36400FF19E9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */,
+				3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,16 +401,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0EB0AB2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift in Sources */,
+				3A0EB0B92D3FBDB100B4FA73 /* CenturyHeader.swift in Sources */,
 				3A0EB06C2D3D94C100B4FA73 /* OverviewViewController.swift in Sources */,
 				3A0EB0A92D3E916700B4FA73 /* NetworkError.swift in Sources */,
 				3A0EB0A12D3E906E00B4FA73 /* ArtificatsCell.swift in Sources */,
 				3A0EB0B32D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift in Sources */,
+				3A7085322D40457000FF19E9 /* ErrorHandler.swift in Sources */,
 				3A0EB09E2D3E903100B4FA73 /* OverviewViewModel.swift in Sources */,
 				3A0EB0682D3D94C100B4FA73 /* AppDelegate.swift in Sources */,
 				3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */,
 				3A0EB06A2D3D94C100B4FA73 /* SceneDelegate.swift in Sources */,
 				3A0EB0AD2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift in Sources */,
+				3A70852E2D3FC38500FF19E9 /* RijksRepository.swift in Sources */,
 				3A0EB0A32D3E90AC00B4FA73 /* ArtifactsModel.swift in Sources */,
+				3A7085302D3FC39200FF19E9 /* RijksRepositoryProtocol.swift in Sources */,
 				3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */,
 				3A0EB0A52D3E913300B4FA73 /* RijksAPIService.swift in Sources */,
 			);
