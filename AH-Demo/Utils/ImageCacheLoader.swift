@@ -13,11 +13,20 @@ class ImageCache {
     private var cache = NSCache<NSURL, UIImage>()
     
     /// Retrieves an image from the cache using its URL.
+    ///
+    /// - Parameters:
+    ///   - key: The URL of the image.
+    /// - Returns: UIImage loaded from cache is returned
     func getImage(forKey key: NSURL) -> UIImage? {
         return cache.object(forKey: key)
     }
     
     /// Stores an image in the cache using its URL as the key.
+    ///
+    /// - Parameters:
+    ///   - image: The `UIIMage` which needs to be cached aganest its url
+    ///   - key : The `NSURL` of the image is used as the key for caching
+    /// - Returns: Nil
     func setImage(_ image: UIImage, forKey key: NSURL) {
         cache.setObject(image, forKey: key)
     }

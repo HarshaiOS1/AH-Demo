@@ -110,8 +110,8 @@ class OverviewViewController: UIViewController {
             // Section with horizontal scrolling
             let section = NSCollectionLayoutSection(group: group)
             section.orthogonalScrollingBehavior = .groupPaging
-            section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
-            section.interGroupSpacing = 5
+            section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 5)
+            section.interGroupSpacing = 10
             
             // Header size
             let headerSize = NSCollectionLayoutSize(
