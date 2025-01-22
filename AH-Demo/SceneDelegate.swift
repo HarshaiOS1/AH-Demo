@@ -20,7 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let overviewViewController = OverviewViewController()
+        
+        /// Create dependencies
+        let apiService = RijksAPIService()
+        let repository = RijksRepository(apiService: apiService)
+        let viewModel = OverviewViewModel(repository: repository)
+        
+        /// Initialize the OverviewViewController with its ViewModel
+        let overviewViewController = OverviewViewController(viewModel: viewModel)
+        
+        /// Wrap it in a NavigationController
         let navigationController = UINavigationController(rootViewController: overviewViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
