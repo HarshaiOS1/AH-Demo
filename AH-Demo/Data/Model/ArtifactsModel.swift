@@ -20,15 +20,15 @@ struct ArtObject: Codable {
     let principalOrFirstMaker: String?
     let longTitle: String?
     let showImage, permitDownload: Bool
-    let webImage, headerImage: Image
+    let webImage, headerImage: Image?
     let productionPlaces: [String]
 }
 
 // MARK: - Image
 struct Image: Codable {
-    let guid: String
-    let offsetPercentageX, offsetPercentageY, width, height: Int
-    let url: String
+    let guid: String?
+    let offsetPercentageX, offsetPercentageY, width, height: Int?
+    let url: String?
 }
 
 // MARK: - Links
