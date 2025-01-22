@@ -29,6 +29,9 @@
 		3A70852E2D3FC38500FF19E9 /* RijksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */; };
 		3A7085302D3FC39200FF19E9 /* RijksRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */; };
 		3A7085322D40457000FF19E9 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085312D40457000FF19E9 /* ErrorHandler.swift */; };
+		3A7085352D412B9D00FF19E9 /* MockRijksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */; };
+		3A7085392D412BDE00FF19E9 /* MockRijksAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */; };
+		3A70853E2D412C4600FF19E9 /* OverviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksRepository.swift; sourceTree = "<group>"; };
 		3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksRepositoryProtocol.swift; sourceTree = "<group>"; };
 		3A7085312D40457000FF19E9 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRijksRepository.swift; sourceTree = "<group>"; };
+		3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRijksAPIService.swift; sourceTree = "<group>"; };
+		3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,9 @@
 		3A0EB07D2D3D94C200B4FA73 /* AH-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A70853B2D412C1700FF19E9 /* PresentaionTests */,
+				3A7085372D412BCC00FF19E9 /* MockService */,
+				3A7085332D412B8300FF19E9 /* MockRepository */,
 				3A0EB07E2D3D94C200B4FA73 /* AH_DemoTests.swift */,
 			);
 			path = "AH-DemoTests";
@@ -268,6 +277,30 @@
 				3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3A7085332D412B8300FF19E9 /* MockRepository */ = {
+			isa = PBXGroup;
+			children = (
+				3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */,
+			);
+			path = MockRepository;
+			sourceTree = "<group>";
+		};
+		3A7085372D412BCC00FF19E9 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		3A70853B2D412C1700FF19E9 /* PresentaionTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */,
+			);
+			path = PresentaionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,7 +457,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7085392D412BDE00FF19E9 /* MockRijksAPIService.swift in Sources */,
+				3A70853E2D412C4600FF19E9 /* OverviewViewModelTests.swift in Sources */,
 				3A0EB07F2D3D94C200B4FA73 /* AH_DemoTests.swift in Sources */,
+				3A7085352D412B9D00FF19E9 /* MockRijksRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

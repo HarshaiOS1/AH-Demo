@@ -27,9 +27,8 @@ class ArtifactsCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-        label.numberOfLines = 2
+        label.numberOfLines = 0
         label.lineBreakMode = .byTruncatingTail
-        label.backgroundColor = .red
         return label
     }()
     
@@ -41,6 +40,7 @@ class ArtifactsCell: UICollectionViewCell {
     /// This method to intialise the cell with other ui comoponent
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupContentView()
         contentView.addSubview(artifactImageView)
         contentView.addSubview(titleLabel)
         setupConstraints()
@@ -48,6 +48,22 @@ class ArtifactsCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    /// `setupContentView` function is used to add shadow and border for the cell to make it look like elivated
+    private func setupContentView() {
+        contentView.layer.cornerRadius = 8
+        contentView.layer.masksToBounds = true
+        
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.2
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowRadius = 4
+        layer.masksToBounds = false
+        
+        layer.cornerRadius = 8
+        layer.borderColor = UIColor.lightGray.cgColor
+        layer.borderWidth = 1.0
     }
     
     /// `setupConstraints` function is used to activate the constraints for image and title label of the cell
@@ -63,9 +79,7 @@ class ArtifactsCell: UICollectionViewCell {
             titleLabel.topAnchor.constraint(equalTo: artifactImageView.bottomAnchor, constant: 5),
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
-            titleLabel.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.25),
-            
-            // Ensure bottom of the titleLabel does not exceed the contentView
+            titleLabel.heightAnchor.constraint(lessThanOrEqualTo: contentView.heightAnchor, multiplier: 0.25),
             titleLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -5)
         ])
     }
