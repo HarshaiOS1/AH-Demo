@@ -44,6 +44,12 @@
                 <a href="../Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewController.html">ArtifactDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewModel.html">ArtifactDetailViewModel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ArtifactsCell.html">ArtifactsCell</a>
               </li>
               <li class="nav-group-task">
@@ -54,6 +60,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ErrorHandler.html">ErrorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchArtifactDetailsUseCase.html">FetchArtifactDetailsUseCase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a>
@@ -133,6 +142,12 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -151,6 +166,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/ArtObject.html">ArtObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ArtifactDetailModel.html">ArtifactDetailModel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ArtifactsModel.html">ArtifactsModel</a>
@@ -357,6 +375,64 @@
                       <div>
                         <h4>Return Value</h4>
                         <p><code>[ArtObject]</code> array of artifact objects fetched is returned or error is thrown</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo15RijksAPIServiceC20fetchArtifactDetails4fromS2S_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchArtifactDetails(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo15RijksAPIServiceC20fetchArtifactDetails4fromS2S_tYaKF">fetchArtifactDetails(from:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches artifact details using the <code>selfLink</code> url.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    An error if the network request or response decoding fails.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchArtifactDetails</span><span class="p">(</span><span class="n">from</span> <span class="nv">selfLink</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selfLink</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The url of the artifact.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string containing the artifact&rsquo;s description.</p>
                       </div>
                     </section>
                   </div>

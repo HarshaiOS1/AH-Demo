@@ -44,6 +44,12 @@
                 <a href="../Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewController.html">ArtifactDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewModel.html">ArtifactDetailViewModel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ArtifactsCell.html">ArtifactsCell</a>
               </li>
               <li class="nav-group-task">
@@ -54,6 +60,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ErrorHandler.html">ErrorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchArtifactDetailsUseCase.html">FetchArtifactDetailsUseCase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a>
@@ -133,6 +142,12 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -151,6 +166,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/ArtObject.html">ArtObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ArtifactDetailModel.html">ArtifactDetailModel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ArtifactsModel.html">ArtifactsModel</a>
@@ -185,7 +203,16 @@
 
                 </div>
               </div>
-            
+            <p><code>OverviewViewModel</code> is responsible for managing the UI state and data flow for the Overview screen.</p>
+
+<ul>
+<li>Coordinates with the <code><a href="../Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a></code> to fetch data for the specified century and page asynchronously.</li>
+<li>Tracks the state of the UI like <code>currentPages</code> for pagination &amp; Supports pagination for each section.</li>
+<li>Captures and relays errors to the ViewController for display.</li>
+<li>Transforms and prepares data for the UI, ensuring it is suitable for display.</li>
+<li>Maintains a centralized data source to provide artifacts for the <code>UICollectionView</code>.</li>
+</ul>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">

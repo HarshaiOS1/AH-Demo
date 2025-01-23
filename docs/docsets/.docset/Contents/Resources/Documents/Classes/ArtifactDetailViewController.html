@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ArtifactDetailViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ArtifactDetailViewController" class="dashAnchor"></a>
+    <a title="ArtifactDetailViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        AH_Demo.ArtifactDetailViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewController.html">ArtifactDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewModel.html">ArtifactDetailViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ArtifactsCell.html">ArtifactsCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AsyncImageLoader.html">AsyncImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CenturyHeader.html">CenturyHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorHandler.html">ErrorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchArtifactDetailsUseCase.html">FetchArtifactDetailsUseCase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageCache.html">ImageCache</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverviewViewController.html">OverviewViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OverviewViewModel.html">OverviewViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:7AH_Demo19ResourceBundleClass33_FE6D567FD9DF36F90C6505BCB4499BD5LLC">ResourceBundleClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RijksAPIService.html">RijksAPIService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RijksRepository.html">RijksRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/resourceBundle">resourceBundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:7AH_Demo14resourceBundle33_FE6D567FD9DF36F90C6505BCB4499BD5LLSo8NSBundleCvp">resourceBundle</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkError.html">NetworkError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/DeveloperToolsSupport.html">DeveloperToolsSupport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DeveloperToolsSupport/ColorResource.html">– ColorResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DeveloperToolsSupport/ImageResource.html">– ImageResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftUI.html">SwiftUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftUI/Color.html">– Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftUI/ShapeStyle.html">– ShapeStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIKit.UIColor.html">UIKit.UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIKit.UIImage.html">UIKit.UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OverviewViewModelProtocol.html">OverviewViewModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RijksAPIServiceProtocol.html">RijksAPIServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RijksRepositoryProtocol.html">RijksRepositoryProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ArtObject.html">ArtObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ArtifactDetailModel.html">ArtifactDetailModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ArtifactsModel.html">ArtifactsModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Image.html">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Links.html">Links</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Links/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Services.html">Services</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ArtifactDetailViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ArtifactDetailViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>ArtifactDetailViewController</code> displays detailed information about a selected artifact.</p>
+
+<ul>
+<li>Shows the artifact&rsquo;s image.</li>
+<li>Displays the artifact&rsquo;s long title.</li>
+<li>Fetches and displays the artifact&rsquo;s description asynchronously.</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC9viewModel33_45C99F476A02D4445D9FB0A104C3F18ELLAA0cdeH8Protocol_pvp"></a>
+                    <a name="//apple_ref/swift/Property/viewModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC9viewModel33_45C99F476A02D4445D9FB0A104C3F18ELLAA0cdeH8Protocol_pvp">viewModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ViewModel managing the state and business logic for the artifact detail screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">viewModel</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC05imageE033_45C99F476A02D4445D9FB0A104C3F18ELLSo07UIImageE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/imageView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC05imageE033_45C99F476A02D4445D9FB0A104C3F18ELLSo07UIImageE0Cvp">imageView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An image view that displays the artifact&rsquo;s image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">imageView</span><span class="p">:</span> <span class="kt">UIImageView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC14longTitleLabel33_45C99F476A02D4445D9FB0A104C3F18ELLSo7UILabelCvp"></a>
+                    <a name="//apple_ref/swift/Property/longTitleLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC14longTitleLabel33_45C99F476A02D4445D9FB0A104C3F18ELLSo7UILabelCvp">longTitleLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A label that displays the artifact&rsquo;s long title.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">longTitleLabel</span><span class="p">:</span> <span class="kt">UILabel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC16descriptionLabel33_45C99F476A02D4445D9FB0A104C3F18ELLSo7UILabelCvp"></a>
+                    <a name="//apple_ref/swift/Property/descriptionLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC16descriptionLabel33_45C99F476A02D4445D9FB0A104C3F18ELLSo7UILabelCvp">descriptionLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A label that displays the artifact&rsquo;s description, fetched asynchronously.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">descriptionLabel</span><span class="p">:</span> <span class="kt">UILabel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC06scrollE033_45C99F476A02D4445D9FB0A104C3F18ELLSo08UIScrollE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/scrollView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC06scrollE033_45C99F476A02D4445D9FB0A104C3F18ELLSo08UIScrollE0Cvp">scrollView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A scrollView that displays the artifact&rsquo;s description in scrollable way.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">scrollView</span><span class="p">:</span> <span class="kt">UIScrollView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC17activityIndicator33_45C99F476A02D4445D9FB0A104C3F18ELLSo010UIActivityhE0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/activityIndicator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC17activityIndicator33_45C99F476A02D4445D9FB0A104C3F18ELLSo010UIActivityhE0Cvp">activityIndicator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An activity indicator displayed while the artifact description is being fetched.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">activityIndicator</span><span class="p">:</span> <span class="kt">UIActivityIndicatorView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC11imageLoader33_45C99F476A02D4445D9FB0A104C3F18ELLAA010AsyncImageH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/imageLoader" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC11imageLoader33_45C99F476A02D4445D9FB0A104C3F18ELLAA010AsyncImageH0Cvp">imageLoader</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An <code><a href="../Classes/AsyncImageLoader.html">AsyncImageLoader</a></code> instance used to load the artifact image asynchronously.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">imageLoader</span><span class="p">:</span> <span class="kt"><a href="../Classes/AsyncImageLoader.html">AsyncImageLoader</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC9viewModelAcA0cdeH8Protocol_p_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(viewModel:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC9viewModelAcA0cdeH8Protocol_p_tcfc">init(viewModel:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">viewModel</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AH_Demo@objc(cs)ArtifactDetailViewController(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AH_Demo@objc(cs)ArtifactDetailViewController(im)initWithCoder:">init(coder:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AH_Demo@objc(cs)ArtifactDetailViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AH_Demo@objc(cs)ArtifactDetailViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lifecycle method called after the view is loaded.</p>
+
+<p>This method sets up the UI, configures the initial data, and starts fetching the artifact&rsquo;s description.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC7setupUI33_45C99F476A02D4445D9FB0A104C3F18ELLyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupUI()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC7setupUI33_45C99F476A02D4445D9FB0A104C3F18ELLyyF">setupUI()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>setupUI</code> functionadds subviews to the view hierarchy and applies Auto Layout constraints to position the UI elements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">setupUI</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC13configureData33_45C99F476A02D4445D9FB0A104C3F18ELLyyF"></a>
+                    <a name="//apple_ref/swift/Method/configureData()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC13configureData33_45C99F476A02D4445D9FB0A104C3F18ELLyyF">configureData()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>configureData</code> function sets the title and long title of the artifact, and loads the artifact image asynchronously.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">configureData</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC9loadImage33_45C99F476A02D4445D9FB0A104C3F18ELL4fromy10Foundation3URLV_tF"></a>
+                    <a name="//apple_ref/swift/Method/loadImage(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC9loadImage33_45C99F476A02D4445D9FB0A104C3F18ELL4fromy10Foundation3URLV_tF">loadImage(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>loadImage</code>uses the <code><a href="../Classes/AsyncImageLoader.html">AsyncImageLoader</a></code> to fetch the image from the given URL.
+If the image fetch fails, a default placeholder image is displayed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">loadImage</span><span class="p">(</span><span class="n">from</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL of the artifact&rsquo;s image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo28ArtifactDetailViewControllerC16fetchDescription33_45C99F476A02D4445D9FB0A104C3F18ELLyyF"></a>
+                    <a name="//apple_ref/swift/Method/fetchDescription()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo28ArtifactDetailViewControllerC16fetchDescription33_45C99F476A02D4445D9FB0A104C3F18ELLyyF">fetchDescription()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>fetchDescription</code> Fetches the artifact&rsquo;s description asynchronously using the ViewModel,
+shows an activity indicator while fetching the description and updates the <code><a href="../Classes/ArtifactDetailViewController.html#/s:7AH_Demo28ArtifactDetailViewControllerC16descriptionLabel33_45C99F476A02D4445D9FB0A104C3F18ELLSo7UILabelCvp">descriptionLabel</a></code> once the fetch is complete.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">fetchDescription</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

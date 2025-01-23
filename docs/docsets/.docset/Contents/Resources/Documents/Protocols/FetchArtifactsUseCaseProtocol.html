@@ -44,6 +44,12 @@
                 <a href="../Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewController.html">ArtifactDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewModel.html">ArtifactDetailViewModel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ArtifactsCell.html">ArtifactsCell</a>
               </li>
               <li class="nav-group-task">
@@ -54,6 +60,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ErrorHandler.html">ErrorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchArtifactDetailsUseCase.html">FetchArtifactDetailsUseCase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a>
@@ -133,6 +142,12 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -151,6 +166,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/ArtObject.html">ArtObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ArtifactDetailModel.html">ArtifactDetailModel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ArtifactsModel.html">ArtifactsModel</a>
@@ -185,7 +203,8 @@
 
                 </div>
               </div>
-            
+            <p>Protocol defining the contract for the <code><a href="../Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a></code>.</p>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -206,7 +225,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Executes the use case to fetch artifacts for a specific century and page.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    An error if the operation fails (e.g., invalid input or repository error).
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -215,6 +240,41 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">century</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">page</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/ArtObject.html">ArtObject</a></span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>century</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The century for which artifacts are to be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number for pagination.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A list of <code><a href="../Structs/ArtObject.html">ArtObject</a></code> objects corresponding to the requested century and page.</p>
                       </div>
                     </section>
                   </div>

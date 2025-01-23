@@ -42,6 +42,12 @@
                 <a href="Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/ArtifactDetailViewController.html">ArtifactDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ArtifactDetailViewModel.html">ArtifactDetailViewModel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/ArtifactsCell.html">ArtifactsCell</a>
               </li>
               <li class="nav-group-task">
@@ -52,6 +58,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ErrorHandler.html">ErrorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FetchArtifactDetailsUseCase.html">FetchArtifactDetailsUseCase</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a>
@@ -131,6 +140,12 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -149,6 +164,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Structs/ArtObject.html">ArtObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ArtifactDetailModel.html">ArtifactDetailModel</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/ArtifactsModel.html">ArtifactsModel</a>
@@ -223,7 +241,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p><code>RijksRepository</code> is responsible for handling artifact-related data interactions.</p>
+
+<ul>
+<li>Conforms to: <code><a href="Protocols/RijksRepositoryProtocol.html">RijksRepositoryProtocol</a></code></li>
+</ul>
+
                         <a href="Classes/RijksRepository.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -267,6 +290,38 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7AH_Demo27FetchArtifactDetailsUseCaseC"></a>
+                    <a name="//apple_ref/swift/Class/FetchArtifactDetailsUseCase" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo27FetchArtifactDetailsUseCaseC">FetchArtifactDetailsUseCase</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>FetchArtifactDetailsUseCase</code> is responsible for fetching the details of a specific artifact.</p>
+
+<ul>
+<li>Conforms to: <code><a href="Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a></code></li>
+</ul>
+
+                        <a href="Classes/FetchArtifactDetailsUseCase.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">FetchArtifactDetailsUseCase</span> <span class="p">:</span> <span class="kt"><a href="Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7AH_Demo21FetchArtifactsUseCaseC"></a>
                     <a name="//apple_ref/swift/Class/FetchArtifactsUseCase" class="dashAnchor"></a>
                     <a class="token" href="#/s:7AH_Demo21FetchArtifactsUseCaseC">FetchArtifactsUseCase</a>
@@ -277,7 +332,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p><code>FetchArtifactsUseCase</code> is responsible for fetching artifacts for a specific century and page.</p>
+
+<p>This use case orchestrates the fetching of artifacts by validating the input,
+applying business rules, and interacting with the repository to fetch data from the data layer.</p>
+
+<ul>
+<li>Conforms to: <code><a href="Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a></code></li>
+</ul>
+
                         <a href="Classes/FetchArtifactsUseCase.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -285,6 +348,40 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">FetchArtifactsUseCase</span> <span class="p">:</span> <span class="kt"><a href="Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AH_Demo@objc(cs)ArtifactDetailViewController"></a>
+                    <a name="//apple_ref/swift/Class/ArtifactDetailViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AH_Demo@objc(cs)ArtifactDetailViewController">ArtifactDetailViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>ArtifactDetailViewController</code> displays detailed information about a selected artifact.</p>
+
+<ul>
+<li>Shows the artifact&rsquo;s image.</li>
+<li>Displays the artifact&rsquo;s long title.</li>
+<li>Fetches and displays the artifact&rsquo;s description asynchronously.</li>
+</ul>
+
+                        <a href="Classes/ArtifactDetailViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ArtifactDetailViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -304,7 +401,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>OverviewViewController</code> is the main view of the application that displays a list of items, It manages the presentation of books, handles network connectivity</p>
+                        <p><code>OverviewViewController</code> is the main view of the application that displays a list of items, It manages the presentation of artifacts.</p>
 
 <ul>
 <li>Usage:
@@ -328,6 +425,39 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7AH_Demo23ArtifactDetailViewModelC"></a>
+                    <a name="//apple_ref/swift/Class/ArtifactDetailViewModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo23ArtifactDetailViewModelC">ArtifactDetailViewModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>ArtifactDetailViewModel</code> manages the UI state and business logic for the artifact detail screen.</p>
+
+<ul>
+<li>Stores the artifact to display.</li>
+<li>Fetches the artifact description using the <code><a href="Classes/FetchArtifactDetailsUseCase.html">FetchArtifactDetailsUseCase</a></code>.</li>
+</ul>
+
+                        <a href="Classes/ArtifactDetailViewModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ArtifactDetailViewModel</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7AH_Demo17OverviewViewModelC"></a>
                     <a name="//apple_ref/swift/Class/OverviewViewModel" class="dashAnchor"></a>
                     <a class="token" href="#/s:7AH_Demo17OverviewViewModelC">OverviewViewModel</a>
@@ -338,7 +468,16 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p><code>OverviewViewModel</code> is responsible for managing the UI state and data flow for the Overview screen.</p>
+
+<ul>
+<li>Coordinates with the <code><a href="Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a></code> to fetch data for the specified century and page asynchronously.</li>
+<li>Tracks the state of the UI like <code>currentPages</code> for pagination &amp; Supports pagination for each section.</li>
+<li>Captures and relays errors to the ViewController for display.</li>
+<li>Transforms and prepares data for the UI, ensuring it is suitable for display.</li>
+<li>Maintains a centralized data source to provide artifacts for the <code>UICollectionView</code>.</li>
+</ul>
+
                         <a href="Classes/OverviewViewModel.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -365,7 +504,7 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>ArtifactsCell</code> is an UICollectionViewCell that is used to load the  artifacts image and its title.</p>
+                        <p>The <code>ArtifactsCell</code> is a UICollectionViewCell that is used to load the artifacts image and its title.</p>
 
                         <a href="Classes/ArtifactsCell.html" class="slightly-smaller">See more</a>
                       </div>
