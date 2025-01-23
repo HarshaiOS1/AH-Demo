@@ -33,6 +33,12 @@
 		3A7085392D412BDE00FF19E9 /* MockRijksAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */; };
 		3A70853E2D412C4600FF19E9 /* OverviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */; };
 		3A7085402D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */; };
+		3A7085422D42946400FF19E9 /* ArtifactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085412D42946400FF19E9 /* ArtifactDetailViewController.swift */; };
+		3A7085442D42998100FF19E9 /* ArtifactDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085432D42998100FF19E9 /* ArtifactDetailModel.swift */; };
+		3A7085462D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085452D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift */; };
+		3A7085482D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */; };
+		3A70854A2D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */; };
+		3A70854C2D429AB000FF19E9 /* ArtifactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,13 @@
 		3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRijksAPIService.swift; sourceTree = "<group>"; };
 		3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelTests.swift; sourceTree = "<group>"; };
 		3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3A7085412D42946400FF19E9 /* ArtifactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewController.swift; sourceTree = "<group>"; };
+		3A7085432D42998100FF19E9 /* ArtifactDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailModel.swift; sourceTree = "<group>"; };
+		3A7085452D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactDetailsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactDetailsUseCase.swift; sourceTree = "<group>"; };
+		3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModel.swift; sourceTree = "<group>"; };
+		3A70854D2D429D7200FF19E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +162,7 @@
 		3A0EB07D2D3D94C200B4FA73 /* AH-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A70854D2D429D7200FF19E9 /* Info.plist */,
 				3A70853B2D412C1700FF19E9 /* PresentaionTests */,
 				3A7085372D412BCC00FF19E9 /* MockService */,
 				3A7085332D412B8300FF19E9 /* MockRepository */,
@@ -190,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				3A0EB0A22D3E90AC00B4FA73 /* ArtifactsModel.swift */,
+				3A7085432D42998100FF19E9 /* ArtifactDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				3A0EB06B2D3D94C100B4FA73 /* OverviewViewController.swift */,
+				3A7085412D42946400FF19E9 /* ArtifactDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -207,6 +223,8 @@
 			children = (
 				3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */,
 				3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */,
+				3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */,
+				3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -262,6 +280,8 @@
 			children = (
 				3A0EB0B22D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift */,
 				3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */,
+				3A7085452D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift */,
+				3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -439,19 +459,25 @@
 				3A0EB0AB2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift in Sources */,
 				3A0EB0B92D3FBDB100B4FA73 /* CenturyHeader.swift in Sources */,
 				3A0EB06C2D3D94C100B4FA73 /* OverviewViewController.swift in Sources */,
+				3A7085462D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift in Sources */,
 				3A0EB0A92D3E916700B4FA73 /* NetworkError.swift in Sources */,
+				3A70854A2D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift in Sources */,
 				3A0EB0A12D3E906E00B4FA73 /* ArtificatsCell.swift in Sources */,
 				3A0EB0B32D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift in Sources */,
+				3A7085482D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift in Sources */,
 				3A7085322D40457000FF19E9 /* ErrorHandler.swift in Sources */,
 				3A0EB09E2D3E903100B4FA73 /* OverviewViewModel.swift in Sources */,
 				3A0EB0682D3D94C100B4FA73 /* AppDelegate.swift in Sources */,
 				3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */,
+				3A7085422D42946400FF19E9 /* ArtifactDetailViewController.swift in Sources */,
 				3A0EB06A2D3D94C100B4FA73 /* SceneDelegate.swift in Sources */,
 				3A0EB0AD2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift in Sources */,
 				3A70852E2D3FC38500FF19E9 /* RijksRepository.swift in Sources */,
 				3A0EB0A32D3E90AC00B4FA73 /* ArtifactsModel.swift in Sources */,
 				3A7085302D3FC39200FF19E9 /* RijksRepositoryProtocol.swift in Sources */,
+				3A7085442D42998100FF19E9 /* ArtifactDetailModel.swift in Sources */,
 				3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */,
+				3A70854C2D429AB000FF19E9 /* ArtifactDetailViewModel.swift in Sources */,
 				3A7085402D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift in Sources */,
 				3A0EB0A52D3E913300B4FA73 /* RijksAPIService.swift in Sources */,
 			);
@@ -686,6 +712,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DFK2G45UA;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AH-DemoTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Harsha.AH-DemoTests";
@@ -706,6 +733,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DFK2G45UA;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AH-DemoTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Harsha.AH-DemoTests";

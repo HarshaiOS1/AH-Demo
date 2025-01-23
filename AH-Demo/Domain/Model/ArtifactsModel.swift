@@ -16,11 +16,12 @@ struct ArtifactsModel: Codable {
 struct ArtObject: Codable {
     let links: Links
     let id, objectNumber, title: String?
-    let hasImage: Bool
+    let hasImage: Bool?
     let principalOrFirstMaker: String?
     let longTitle: String?
-    let showImage, permitDownload: Bool
+    let showImage, permitDownload: Bool?
     let webImage, headerImage: Image?
+    let description: String?
     let productionPlaces: [String]
 }
 

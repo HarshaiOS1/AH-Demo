@@ -11,6 +11,7 @@ import UIKit
 class ArtifactsCell: UICollectionViewCell {
     static let reuseIdentifier = "ArtifactsCell"
     
+    /// image of the artifact
     private let artifactImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -22,6 +23,7 @@ class ArtifactsCell: UICollectionViewCell {
         return imageView
     }()
     
+    /// title of the artifact
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false

@@ -7,12 +7,15 @@
 
 import UIKit
 
-/// `OverviewViewController` is the main view of the application that displays a list of items, It manages the presentation of books, handles network connectivity
+/// `OverviewViewController` is the main view of the application that displays a list of items, It manages the presentation of artifacts.
 ///- Usage:
 ///   Use `OverviewViewController` as the entry point for Rijksmuseum's  item list.
 class OverviewViewController: UIViewController {
+    /// The ViewModel managing the state and business logic for the overview screen.
     private var viewModel: OverviewViewModelProtocol!
+    /// The collection view used to show the artifacts
     private var collectionView: UICollectionView!
+    /// current section for which data is being fetched
     private var fetchingSection = -1
     
     /// Activity Indicator to show loading state during data fetching
@@ -32,6 +35,9 @@ class OverviewViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Lifecycle method called after the view is loaded.
+    ///
+    /// This method sets up the UI, configures the initial data, and starts fetching the artifact's description.
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -266,6 +272,21 @@ extension OverviewViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        // Retrieve the selected artifact
+        guard let artifact = viewModel.dataSource[indexPath.section + 16]?[indexPath.item] else {
+            return
+        }
+        
+        // Create the necessary dependencies
+        let apiService = RijksAPIService() // Instance of API service
+        let repository = RijksRepository(apiService: apiService) // Instance of repository
+        let fetchArtifactDetailsUseCase = FetchArtifactDetailsUseCase(repository: repository) // Use case
+        let detailViewModel = ArtifactDetailViewModel(artifact: artifact, fetchArtifactDetailsUseCase: fetchArtifactDetailsUseCase) // ViewModel
+        
+        // Initialize the detail view controller with the ViewModel
+        let detailVC = ArtifactDetailViewController(viewModel: detailViewModel)
+        
+        // Push the detail view controller onto the navigation stack
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -20,4 +20,7 @@ protocol RijksAPIServiceProtocol {
     /// - Throws: An error if the network request or response parsing fails.
     /// - Returns: An array of `ArtObject` representing the fetched artifacts.
     func fetchArtifacts(for century: Int, page: Int) async throws -> [ArtObject]
+    
+    func fetchArtifactDetails(from selfLink: String) async throws -> String
+
 }
