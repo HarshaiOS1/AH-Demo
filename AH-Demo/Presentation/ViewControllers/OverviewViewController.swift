@@ -119,7 +119,7 @@ class OverviewViewController: UIViewController {
             DispatchQueue.main.async {
                 if (self.fetchingSection > -1) {
                     self.collectionView.reloadData()
-//                    self.collectionView.reloadSections(IndexSet(integer: century - 16))
+                    //                    self.collectionView.reloadSections(IndexSet(integer: century - 16))
                 } else {
                     self.collectionView.reloadData()
                 }

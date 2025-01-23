@@ -23,7 +23,7 @@
 		3A0EB0AB2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */; };
 		3A0EB0AD2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */; };
 		3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */; };
-		3A0EB0B32D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */; };
+		3A0EB0B32D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B22D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift */; };
 		3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */; };
 		3A0EB0B92D3FBDB100B4FA73 /* CenturyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */; };
 		3A70852E2D3FC38500FF19E9 /* RijksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */; };
@@ -32,6 +32,7 @@
 		3A7085352D412B9D00FF19E9 /* MockRijksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */; };
 		3A7085392D412BDE00FF19E9 /* MockRijksAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */; };
 		3A70853E2D412C4600FF19E9 /* OverviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */; };
+		3A7085402D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,7 @@
 		3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksAPIServiceProtocol.swift; sourceTree = "<group>"; };
 		3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelProtocol.swift; sourceTree = "<group>"; };
 		3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
-		3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetechArtifactsUseCases.swift; sourceTree = "<group>"; };
+		3A0EB0B22D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactsUseCase.swift; sourceTree = "<group>"; };
 		3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenturyHeader.swift; sourceTree = "<group>"; };
 		3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksRepository.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRijksRepository.swift; sourceTree = "<group>"; };
 		3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRijksAPIService.swift; sourceTree = "<group>"; };
 		3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelTests.swift; sourceTree = "<group>"; };
+		3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactsUseCaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +182,6 @@
 				3A0EB0A62D3E913D00B4FA73 /* Service */,
 				3A70852C2D3FC36400FF19E9 /* Repositories */,
 				3A0EB0A72D3E915000B4FA73 /* Network */,
-				3A0EB09A2D3E8C3000B4FA73 /* Model */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -250,6 +251,7 @@
 		3A0EB0B12D3E923100B4FA73 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3A0EB09A2D3E8C3000B4FA73 /* Model */,
 				3A0EB0B42D3EE7A500B4FA73 /* UseCases */,
 			);
 			path = Domain;
@@ -258,7 +260,8 @@
 		3A0EB0B42D3EE7A500B4FA73 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				3A0EB0B22D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift */,
+				3A0EB0B22D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift */,
+				3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -438,7 +441,7 @@
 				3A0EB06C2D3D94C100B4FA73 /* OverviewViewController.swift in Sources */,
 				3A0EB0A92D3E916700B4FA73 /* NetworkError.swift in Sources */,
 				3A0EB0A12D3E906E00B4FA73 /* ArtificatsCell.swift in Sources */,
-				3A0EB0B32D3EE79F00B4FA73 /* FetechArtifactsUseCases.swift in Sources */,
+				3A0EB0B32D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift in Sources */,
 				3A7085322D40457000FF19E9 /* ErrorHandler.swift in Sources */,
 				3A0EB09E2D3E903100B4FA73 /* OverviewViewModel.swift in Sources */,
 				3A0EB0682D3D94C100B4FA73 /* AppDelegate.swift in Sources */,
@@ -449,6 +452,7 @@
 				3A0EB0A32D3E90AC00B4FA73 /* ArtifactsModel.swift in Sources */,
 				3A7085302D3FC39200FF19E9 /* RijksRepositoryProtocol.swift in Sources */,
 				3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */,
+				3A7085402D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift in Sources */,
 				3A0EB0A52D3E913300B4FA73 /* RijksAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

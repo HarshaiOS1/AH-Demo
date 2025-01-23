@@ -22,11 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         /// Create dependencies
-        let apiService = RijksAPIService()
-        let repository = RijksRepository(apiService: apiService)
-        let viewModel = OverviewViewModel(repository: repository)
+        let apiService = RijksAPIService() // Data Layer: API service
+        let repository = RijksRepository(apiService: apiService) // Data Layer: Repository
+        let fetchArtifactsUseCase = FetchArtifactsUseCase(repository: repository) // Domain Layer: Use Case
+        let viewModel = OverviewViewModel(fetchArtifactsUseCase: fetchArtifactsUseCase) // Presentation Layer: ViewModel
         
-        /// Initialize the OverviewViewController with its ViewModel
+        /// Initialize the root view controller
         let overviewViewController = OverviewViewController(viewModel: viewModel)
         
         /// Wrap it in a NavigationController
