@@ -11,8 +11,11 @@ import UIKit
 ///- Usage:
 ///   Use `OverviewViewController` as the entry point for Rijksmuseum's  item list.
 class OverviewViewController: UIViewController {
+    /// The ViewModel managing the state and business logic for the overview screen.
     private var viewModel: OverviewViewModelProtocol!
+    /// The collection view used to show the artifacts
     private var collectionView: UICollectionView!
+    /// current section for which data is being fetched
     private var fetchingSection = -1
     
     /// Activity Indicator to show loading state during data fetching
@@ -32,6 +35,9 @@ class OverviewViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Lifecycle method called after the view is loaded.
+    ///
+    /// This method sets up the UI, configures the initial data, and starts fetching the artifact's description.
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()

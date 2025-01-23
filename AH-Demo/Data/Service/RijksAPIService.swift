@@ -48,6 +48,11 @@ class RijksAPIService: RijksAPIServiceProtocol {
         }
     }
     
+    /// Fetches artifact details using the `selfLink` url.
+    ///
+    /// - Parameter selfLink: The url of the artifact.
+    /// - Throws: An error if the network request or response decoding fails.
+    /// - Returns: A string containing the artifact's description.
     func fetchArtifactDetails(from selfLink: String) async throws -> String {
         guard let url = URL(string: selfLink + "?key=\(Constants.apiKey)") else {
             throw NetworkError.invalidURL
