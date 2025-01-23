@@ -34,6 +34,9 @@ class OverviewViewModelTests: XCTestCase {
     /// The mock repository used to simulate data interactions.
     var mockRepository: MockRijksRepository!
     
+    /// The use case for fetching artifacts.
+    var fetchArtifactsUseCase: FetchArtifactsUseCase!
+    
     /// Set up test resources before each test.
     ///
     /// This method initializes the mock API service, repository, and the `OverviewViewModel`.
@@ -41,7 +44,8 @@ class OverviewViewModelTests: XCTestCase {
         super.setUp()
         mockAPIService = MockRijksAPIService()
         mockRepository = MockRijksRepository(apiService: mockAPIService)
-        viewModel = OverviewViewModel(repository: mockRepository)
+        fetchArtifactsUseCase = FetchArtifactsUseCase(repository: mockRepository)
+        viewModel = OverviewViewModel(fetchArtifactsUseCase: fetchArtifactsUseCase)
     }
     
     /// Tear down test resources after each test.
@@ -51,6 +55,7 @@ class OverviewViewModelTests: XCTestCase {
         viewModel = nil
         mockAPIService = nil
         mockRepository = nil
+        fetchArtifactsUseCase = nil
         super.tearDown()
     }
     
