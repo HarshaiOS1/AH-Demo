@@ -15,7 +15,7 @@ struct Constants {
     /// Api key to acces Rijksmuseum api's
     static let apiKey = "0fiuZFh4"
     /// The timeout duration for network requests, in seconds.
-    static let timeout = 25.0
+    static let timeout = 50.0
 }
 
 /// A struct that defines service endpoint paths for various network requests.

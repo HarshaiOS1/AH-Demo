@@ -353,10 +353,61 @@ SWIFT_CLASS("_TtC7AH_Demo22OverviewViewController")
 @class NSIndexPath;
 
 @interface OverviewViewController (SWIFT_EXTENSION(AH_Demo)) <UICollectionViewDataSource, UICollectionViewDelegate>
+/// Returns the number of sections in the collection view.
+/// \param collectionView The <code>UICollectionView</code> requesting the information.
+///
+///
+/// returns:
+/// The number of sections, corresponding to the number of keys in the <code>dataSource</code>.
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+/// Returns the number of items in a specific section of the collection view.
+/// \param collectionView The <code>UICollectionView</code> requesting the information.
+///
+/// \param section The index of the section.
+///
+///
+/// returns:
+/// The number of items in the specified section, or <code>0</code> if the section is empty or not present in the <code>dataSource</code>.
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+/// Configures and returns the cell for a specific item in the collection view.
+/// \param collectionView The <code>UICollectionView</code> requesting the cell.
+///
+/// \param indexPath The index path specifying the location of the cell.
+///
+///
+/// returns:
+/// A configured <code>ArtifactsCell</code> displaying the artifact information.
+/// If the cell cannot be dequeued as an <code>ArtifactsCell</code>, returns empty collection view cell
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+/// Configures and returns the supplementary view (e.g., header) for a specific section of the collection view.
+/// \param collectionView The <code>UICollectionView</code> requesting the supplementary view.
+///
+/// \param kind The kind of supplementary view being requested (header in this case).
+///
+/// \param indexPath The index path specifying the location of the supplementary view.
+///
+///
+/// returns:
+/// A configured <code>CenturyHeader</code> displaying the century for the section, or an empty reusable view if the kind does not match a header.
 - (UICollectionReusableView * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView viewForSupplementaryElementOfKind:(NSString * _Nonnull)kind atIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+/// Handles the display of a cell and triggers pagination if the user scrolls near the end of a section.
+/// This function:
+/// <ul>
+///   <li>
+///     Checks the section of the cell being displayed.
+///   </li>
+///   <li>
+///     Triggers pagination for that section if the user scrolls within 4 items of the end.
+///   </li>
+/// </ul>
+/// \param collectionView The <code>UICollectionView</code> containing the cell.
+///
+/// \param cell The <code>UICollectionViewCell</code> being displayed.
+///
+/// \param indexPath The index path of the cell being displayed.
+///
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 @class UIWindow;

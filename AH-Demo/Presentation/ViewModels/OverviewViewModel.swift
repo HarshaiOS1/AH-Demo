@@ -1,33 +1,21 @@
-//
-//  OverviewViewModel.swift
-//  AH-Demo
-//
-//  Created by Harsha on 20/01/2025.
-//
-
-import Foundation
-/// A view model for managing and presenting RijksAPI Data for overview.
-///
-/// The `OverviewViewModel` class is responsible
-/// 1. For fetching `Atifacts` from an external service (RijksAPI),
-/// 3. It handles network connectivity, offline data loading, and error reporting.
-/// 4. It conforms to the `OverviewViewModelProtocol` protocol, so implementing `fetchArtifacts` is enforced
-
 class OverviewViewModel: OverviewViewModelProtocol {
     private let repository: RijksRepositoryProtocol
+    /// data for the respecitve century of artifacts
     private(set) var dataSource: [Int: [ArtObject]] = [:]
+    /// Tracks the current page for each century
+    private var currentPages: [Int: Int] = [:]
     
     init(repository: RijksRepositoryProtocol) {
         self.repository = repository
     }
+    
     /// Fetch Artifacts
     ///
-    /// This function Fetches artifacts and interacts with `RijksRepositoryProtocol` to make the api call, throws error
-    /// in case of any errors
+    /// Fetches artifacts for a specific century and page. Handles appending artifacts to the data source.
     /// - Parameters:
-    ///   - century:The Int value indicating the century the artifacts should be fetched from.
-    ///   - page: The Int value used for pagination of the api request.
-    /// - Returns: Nil
+    ///   - century: The century from which artifacts are to be fetched.
+    ///   - page: The page number for pagination.
+    /// - Throws: Error if the repository call fails.
     func fetchArtifacts(for century: Int, page: Int) async throws {
         do {
             let artifacts = try await repository.fetchArtifacts(for: century, page: page)
@@ -35,8 +23,17 @@ class OverviewViewModel: OverviewViewModelProtocol {
                 dataSource[century] = []
             }
             dataSource[century]?.append(contentsOf: artifacts)
+            currentPages[century] = page
         } catch {
             throw error
         }
+    }
+    
+    /// Get the next page for a century
+    ///
+    /// - Parameter century: The century for which to get the next page.
+    /// - Returns: The next page number.
+    func nextPage(for century: Int) -> Int {
+        return (currentPages[century] ?? 0) + 1
     }
 }
