@@ -31,4 +31,12 @@ class MockRijksRepository: RijksRepositoryProtocol {
     func fetchArtifacts(for century: Int, page: Int) async throws -> [ArtObject] {
         return try await apiService.fetchArtifacts(for: century, page: page)
     }
+    /// Simulates fetching artifact details using the `selfLink` link.
+    ///
+    /// - Parameter selfLink: The url  link of the artifact.
+    /// - Throws: An error if the data fetch operation fails.
+    /// - Returns: A string containing the artifact's description.
+    func fetchArtifactDetails(from selfLink: String) async throws -> String {
+        return try await apiService.fetchArtifactDetails(from: selfLink)
+    }
 }

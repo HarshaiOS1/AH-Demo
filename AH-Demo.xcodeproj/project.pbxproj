@@ -39,6 +39,8 @@
 		3A7085482D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */; };
 		3A70854A2D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */; };
 		3A70854C2D429AB000FF19E9 /* ArtifactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */; };
+		3AD4A7AD2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4A7AC2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift */; };
+		3AD4A7B12D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4A7B02D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +97,8 @@
 		3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactDetailsUseCase.swift; sourceTree = "<group>"; };
 		3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModel.swift; sourceTree = "<group>"; };
-		3A70854D2D429D7200FF19E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3AD4A7AC2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModelTests.swift; sourceTree = "<group>"; };
+		3AD4A7B02D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchArtifactDetailsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +165,8 @@
 		3A0EB07D2D3D94C200B4FA73 /* AH-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A70854D2D429D7200FF19E9 /* Info.plist */,
 				3A70853B2D412C1700FF19E9 /* PresentaionTests */,
+				3AD4A7AE2D42DD0B008CC9B3 /* Domain */,
 				3A7085372D412BCC00FF19E9 /* MockService */,
 				3A7085332D412B8300FF19E9 /* MockRepository */,
 				3A0EB07E2D3D94C200B4FA73 /* AH_DemoTests.swift */,
@@ -322,8 +325,17 @@
 			isa = PBXGroup;
 			children = (
 				3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */,
+				3AD4A7AC2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift */,
 			);
 			path = PresentaionTests;
+			sourceTree = "<group>";
+		};
+		3AD4A7AE2D42DD0B008CC9B3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3AD4A7B02D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,7 +500,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7085392D412BDE00FF19E9 /* MockRijksAPIService.swift in Sources */,
+				3AD4A7B12D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift in Sources */,
 				3A70853E2D412C4600FF19E9 /* OverviewViewModelTests.swift in Sources */,
+				3AD4A7AD2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift in Sources */,
 				3A0EB07F2D3D94C200B4FA73 /* AH_DemoTests.swift in Sources */,
 				3A7085352D412B9D00FF19E9 /* MockRijksRepository.swift in Sources */,
 			);

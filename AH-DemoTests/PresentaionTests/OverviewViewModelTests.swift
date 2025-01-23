@@ -14,16 +14,6 @@ import XCTest
 /// - Successful fetching of artifacts.
 /// - Handling errors when fetching artifacts fails.
 /// It uses a mock API service and repository for controlled testing.
-
-import XCTest
-@testable import AH_Demo
-
-/// `OverviewViewModelTests` is a test suite for verifying the functionality of `OverviewViewModel`.
-///
-/// This class includes tests for:
-/// - Successful fetching of artifacts.
-/// - Handling errors when fetching artifacts fails.
-/// It uses a mock API service and repository for controlled testing.
 class OverviewViewModelTests: XCTestCase {
     /// The `OverviewViewModel` under test.
     var viewModel: OverviewViewModel!
@@ -66,7 +56,7 @@ class OverviewViewModelTests: XCTestCase {
     /// - The correct number and details of artifacts are present in the `dataSource`.
     func testFetchArtifactsSuccess() async {
         // Arrange: Prepare a mock artifact and set it in the mock API service
-        let mockArtifact = ArtObject(links: Links(linksSelf: "self", web: "web"), id: "1", objectNumber: "123", title: "Mock Artifact", hasImage: true, principalOrFirstMaker: "Ananymous", longTitle: "Mock artifact long title", showImage: true, permitDownload: true, webImage: Image(guid: "guid", offsetPercentageX: 0, offsetPercentageY: 0, width: 100, height: 100, url: "https://example.com/image.jpg"), headerImage: Image(guid: "guid", offsetPercentageX: 0, offsetPercentageY: 0, width: 100, height: 100, url: "https://example.com/header.jpg"), productionPlaces: []);
+        let mockArtifact = ArtObject(links: Links(linksSelf: "self", web: "web"), id: "1", objectNumber: "123", title: "Mock Artifact", hasImage: true, principalOrFirstMaker: "Ananymous", longTitle: "Mock artifact long title", showImage: true, permitDownload: true, webImage: Image(guid: "guid", offsetPercentageX: 0, offsetPercentageY: 0, width: 100, height: 100, url: "https://example.com/image.jpg"), headerImage: Image(guid: "guid", offsetPercentageX: 0, offsetPercentageY: 0, width: 100, height: 100, url: "https://example.com/header.jpg"), description: nil, productionPlaces: []);
         mockAPIService.mockArtifacts = [mockArtifact]
         
         // Act: Fetch artifacts for the 17th century
