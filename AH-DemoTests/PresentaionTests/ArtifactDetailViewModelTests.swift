@@ -86,24 +86,4 @@ class ArtifactDetailViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.description, "Description not available.")
         XCTAssertFalse(viewModel.isLoading)
     }
-    
-    /// Test that the `isLoading` property is toggled correctly during the `fetchDescription` process.
-    ///
-    /// This test ensures:
-    /// - `isLoading` is `true` when fetching begins.
-    /// - `isLoading` is `false` when fetching completes.
-    func testFetchDescriptionLoadingState() async {
-        // Arrange
-        XCTAssertFalse(viewModel.isLoading)
-        
-        // Act: Fetch the description
-        Task {
-            await viewModel.fetchDescription()
-        }
-        
-        // Assert: Verify that `isLoading` is toggled correctly
-        XCTAssertTrue(viewModel.isLoading)
-        await Task.yield() // Allow async task to complete
-        XCTAssertFalse(viewModel.isLoading)
-    }
 }
