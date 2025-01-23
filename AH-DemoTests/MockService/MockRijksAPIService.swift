@@ -31,4 +31,11 @@ class MockRijksAPIService: RijksAPIServiceProtocol {
         }
         return mockArtifacts
     }
+    
+    func fetchArtifactDetails(from selfLink: String) async throws -> String {
+        if shouldReturnError {
+            throw URLError(.badServerResponse)
+        }
+        return "dummy description for artifact"
+    }
 }
