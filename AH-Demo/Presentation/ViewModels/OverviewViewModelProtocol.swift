@@ -10,4 +10,5 @@ import Foundation
 protocol OverviewViewModelProtocol {
     var dataSource: [Int: [ArtObject]] { get }
     func fetchArtifacts(for century: Int, page: Int) async throws
+    func nextPage(for century: Int) -> Int
 }

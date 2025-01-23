@@ -104,7 +104,7 @@ class ArtifactsCell: UICollectionViewCell {
                     artifactImageView.image = image
                 }
             } catch {
-                print("Failed to load image: \(error)")
+                artifactImageView.image = UIImage(systemName: "photo")
             }
         }
     }
