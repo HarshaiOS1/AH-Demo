@@ -253,19 +253,6 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/UICollectionViewDelegate%20%26%20UICollectionViewDataSource"></a>
-                <a name="//apple_ref/swift/Section/UICollectionViewDelegate &amp; UICollectionViewDataSource" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/UICollectionViewDelegate%20%26%20UICollectionViewDataSource"></a>
-                  <h3 class="section-name"><span>UICollectionViewDelegate &amp; UICollectionViewDataSource</span>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -279,7 +266,8 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Returns the number of sections in the collection view.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -288,6 +276,29 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">(</span><span class="k">in</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>collectionView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UICollectionView</code> requesting the information.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of sections, corresponding to the number of keys in the <code>dataSource</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -305,7 +316,8 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Returns the number of items in a specific section of the collection view.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -314,6 +326,41 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">numberOfItemsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>collectionView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UICollectionView</code> requesting the information.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>section</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index of the section.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of items in the specified section, or <code>0</code> if the section is empty or not present in the <code>dataSource</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -331,7 +378,8 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Configures and returns the cell for a specific item in the collection view.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -340,6 +388,42 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">cellForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>collectionView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UICollectionView</code> requesting the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path specifying the location of the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A configured <code><a href="../Classes/ArtifactsCell.html">ArtifactsCell</a></code> displaying the artifact information.
+     If the cell cannot be dequeued as an <code><a href="../Classes/ArtifactsCell.html">ArtifactsCell</a></code>, returns empty collection view cell</p>
                       </div>
                     </section>
                   </div>
@@ -357,7 +441,8 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Configures and returns the supplementary view (e.g., header) for a specific section of the collection view.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -371,6 +456,156 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>collectionView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UICollectionView</code> requesting the supplementary view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>kind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The kind of supplementary view being requested (header in this case).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path specifying the location of the supplementary view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A configured <code><a href="../Classes/CenturyHeader.html">CenturyHeader</a></code> displaying the century for the section, or an empty reusable view if the kind does not match a header.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@AH_Demo@objc(cs)OverviewViewController(im)collectionView:willDisplayCell:forItemAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:willDisplay:forItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@AH_Demo@objc(cs)OverviewViewController(im)collectionView:willDisplayCell:forItemAtIndexPath:">collectionView(_:<wbr>willDisplay:<wbr>forItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles the display of a cell and triggers pagination if the user scrolls near the end of a section.</p>
+
+<p>This function:</p>
+
+<ul>
+<li>Checks the section of the cell being displayed.</li>
+<li>Triggers pagination for that section if the user scrolls within 4 items of the end.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">willDisplay</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UICollectionViewCell</span><span class="p">,</span> <span class="n">forItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>collectionView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UICollectionView</code> containing the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cell</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UICollectionViewCell</code> being displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path of the cell being displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@AH_Demo@objc(cs)OverviewViewController(im)collectionView:didSelectItemAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:didSelectItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@AH_Demo@objc(cs)OverviewViewController(im)collectionView:didSelectItemAtIndexPath:">collectionView(_:<wbr>didSelectItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">didSelectItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -379,7 +614,7 @@ Use <code>OverviewViewController</code> as the entry point for Rijksmuseum&rsquo
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-22)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

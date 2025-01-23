@@ -136,16 +136,7 @@
 
                 </div>
               </div>
-            <p>A view model for managing and presenting RijksAPI Data for overview.</p>
-
-<p>The <code>OverviewViewModel</code> class is responsible</p>
-
-<ol>
-<li>For fetching <code>Atifacts</code> from an external service (RijksAPI),</li>
-<li>It handles network connectivity, offline data loading, and error reporting.</li>
-<li>It conforms to the <code><a href="../Protocols/OverviewViewModelProtocol.html">OverviewViewModelProtocol</a></code> protocol, so implementing <code>fetchArtifacts</code> is enforced</li>
-</ol>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -163,7 +154,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>data for the respecitve century of artifacts</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -220,8 +212,12 @@
                       <div class="abstract">
                         <p>Fetch Artifacts</p>
 
-<p>This function Fetches artifacts and interacts with <code><a href="../Protocols/RijksRepositoryProtocol.html">RijksRepositoryProtocol</a></code> to make the api call, throws error
-in case of any errors</p>
+<p>Fetches artifacts for a specific century and page. Handles appending artifacts to the data source.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error if the repository call fails.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -244,7 +240,7 @@ in case of any errors</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The Int value indicating the century the artifacts should be fetched from.</p>
+                                  <p>The century from which artifacts are to be fetched.</p>
                                 </div>
                               </td>
                             </tr>
@@ -256,7 +252,53 @@ in case of any errors</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The Int value used for pagination of the api request.</p>
+                                  <p>The page number for pagination.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7AH_Demo17OverviewViewModelC8nextPage3forS2i_tF"></a>
+                    <a name="//apple_ref/swift/Method/nextPage(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7AH_Demo17OverviewViewModelC8nextPage3forS2i_tF">nextPage(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the next page for a century</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">nextPage</span><span class="p">(</span><span class="k">for</span> <span class="nv">century</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>century</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The century for which to get the next page.</p>
                                 </div>
                               </td>
                             </tr>
@@ -265,7 +307,7 @@ in case of any errors</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Nil</p>
+                        <p>The next page number.</p>
                       </div>
                     </section>
                   </div>
@@ -275,7 +317,7 @@ in case of any errors</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-22)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
