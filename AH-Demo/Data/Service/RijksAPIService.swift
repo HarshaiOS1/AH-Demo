@@ -47,4 +47,25 @@ class RijksAPIService: RijksAPIServiceProtocol {
             throw NetworkError.decodingError
         }
     }
+    
+    func fetchArtifactDetails(from selfLink: String) async throws -> String {
+        guard let url = URL(string: selfLink + "?key=\(Constants.apiKey)") else {
+            throw NetworkError.invalidURL
+        }
+        
+        var request = URLRequest(url: url)
+        request.timeoutInterval = Constants.timeout
+        
+        let (data, response) = try await session.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw NetworkError.invalidResponse
+        }
+        /// Decode the response
+        do {
+            let detailResponse = try JSONDecoder().decode(ArtifactDetailModel.self, from: data)
+            return detailResponse.artObject.description ?? "No description for the artifact"
+        } catch {
+            throw NetworkError.decodingError
+        }
+    }
 }

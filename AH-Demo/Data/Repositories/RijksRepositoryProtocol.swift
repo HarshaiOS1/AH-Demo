@@ -21,4 +21,6 @@ protocol RijksRepositoryProtocol {
     /// - Throws: An error if the data fetch operation fails.
     /// - Returns: An array of `ArtObject` representing the fetched artifacts.
     func fetchArtifacts(for century: Int, page: Int) async throws -> [ArtObject]
+    
+    func fetchArtifactDetails(from selfLink: String) async throws -> String
 }

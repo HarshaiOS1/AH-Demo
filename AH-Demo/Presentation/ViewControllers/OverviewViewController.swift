@@ -7,7 +7,7 @@
 
 import UIKit
 
-/// `OverviewViewController` is the main view of the application that displays a list of items, It manages the presentation of books, handles network connectivity
+/// `OverviewViewController` is the main view of the application that displays a list of items, It manages the presentation of artifacts.
 ///- Usage:
 ///   Use `OverviewViewController` as the entry point for Rijksmuseum's  item list.
 class OverviewViewController: UIViewController {
@@ -266,6 +266,21 @@ extension OverviewViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        // Retrieve the selected artifact
+        guard let artifact = viewModel.dataSource[indexPath.section + 16]?[indexPath.item] else {
+            return
+        }
+        
+        // Create the necessary dependencies
+        let apiService = RijksAPIService() // Instance of API service
+        let repository = RijksRepository(apiService: apiService) // Instance of repository
+        let fetchArtifactDetailsUseCase = FetchArtifactDetailsUseCase(repository: repository) // Use case
+        let detailViewModel = ArtifactDetailViewModel(artifact: artifact, fetchArtifactDetailsUseCase: fetchArtifactDetailsUseCase) // ViewModel
+        
+        // Initialize the detail view controller with the ViewModel
+        let detailVC = ArtifactDetailViewController(viewModel: detailViewModel)
+        
+        // Push the detail view controller onto the navigation stack
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -17,4 +17,8 @@ class RijksRepository: RijksRepositoryProtocol {
     func fetchArtifacts(for century: Int, page: Int) async throws -> [ArtObject] {
         return try await apiService.fetchArtifacts(for: century, page: page)
     }
+    
+    func fetchArtifactDetails(from selfLink: String) async throws -> String {
+        return try await apiService.fetchArtifactDetails(from: selfLink)
+    }
 }

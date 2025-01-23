@@ -10,7 +10,7 @@ import Foundation
 /// A struct that holds constant values used throughout the application.
 
 struct Constants {
-    /// The base URL for the Google Books API.
+    /// The base URL for the Rijks Museum API.
     static let baseUrl = "https://www.rijksmuseum.nl/"
     /// Api key to acces Rijksmuseum api's
     static let apiKey = "0fiuZFh4"

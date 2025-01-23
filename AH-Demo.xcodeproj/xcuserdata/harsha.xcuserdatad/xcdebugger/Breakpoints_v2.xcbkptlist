@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "22F45A55-66A4-4DAB-AD61-3D6FF6CEF29D"
+            uuid = "BE4BDD62-B4DB-4273-8B3A-624CA378A62A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AH-Demo/Data/Service/RijksAPIService.swift"
+            filePath = "AH-Demo/Presentation/ViewModels/ArtifactDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "fetchArtifacts(for:page:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchDescription()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73DF2636-7131-482C-9157-A6DE2107E26E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AH-Demo/Presentation/ViewModels/ArtifactDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchDescription()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
