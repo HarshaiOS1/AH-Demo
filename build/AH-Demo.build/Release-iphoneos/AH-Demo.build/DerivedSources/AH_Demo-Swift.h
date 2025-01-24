@@ -314,13 +314,38 @@ SWIFT_CLASS("_TtC7AH_Demo11AppDelegate")
 @end
 
 @class NSCoder;
+@class NSString;
+@class NSBundle;
 
-/// The <code>ArtifactsCell</code> is an UICollectionViewCell that is used to load the  artifacts image and its title.
+/// <code>ArtifactDetailViewController</code> displays detailed information about a selected artifact.
+/// <ul>
+///   <li>
+///     Shows the artifact’s image.
+///   </li>
+///   <li>
+///     Displays the artifact’s long title.
+///   </li>
+///   <li>
+///     Fetches and displays the artifact’s description asynchronously.
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC7AH_Demo28ArtifactDetailViewController")
+@interface ArtifactDetailViewController : UIViewController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// Lifecycle method called after the view is loaded.
+/// This method sets up the UI, configures the initial data, and starts fetching the artifact’s description.
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+/// The <code>ArtifactsCell</code> is a UICollectionViewCell that is used to load the artifacts image and its title.
 SWIFT_CLASS("_TtC7AH_Demo13ArtifactsCell")
 @interface ArtifactsCell : UICollectionViewCell
 /// This method to intialise the cell with other ui comoponent
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// Prepares the cell for reuse
 - (void)prepareForReuse;
 @end
 
@@ -332,10 +357,8 @@ SWIFT_CLASS("_TtC7AH_Demo13CenturyHeader")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
-@class NSBundle;
 
-/// <code>OverviewViewController</code> is the main view of the application that displays a list of items, It manages the presentation of books, handles network connectivity
+/// <code>OverviewViewController</code> is the main view of the application that displays a list of items, It manages the presentation of artifacts.
 /// <ul>
 ///   <li>
 ///     Usage:
@@ -345,6 +368,8 @@ SWIFT_CLASS("_TtC7AH_Demo13CenturyHeader")
 SWIFT_CLASS("_TtC7AH_Demo22OverviewViewController")
 @interface OverviewViewController : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// Lifecycle method called after the view is loaded.
+/// This method sets up the UI, configures the initial data, and starts fetching the artifact’s description.
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end

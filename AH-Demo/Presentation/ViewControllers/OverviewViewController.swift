@@ -254,7 +254,6 @@ extension OverviewViewController: UICollectionViewDataSource, UICollectionViewDe
     /// - Checks the section of the cell being displayed.
     /// - Triggers pagination for that section if the user scrolls within 4 items of the end.
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
         let section = indexPath.section
         if fetchingSection != section {
             if section >= 0 {
@@ -272,7 +271,6 @@ extension OverviewViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // Retrieve the selected artifact
         guard let artifact = viewModel.dataSource[indexPath.section + 16]?[indexPath.item] else {
             return
         }
@@ -286,7 +284,6 @@ extension OverviewViewController: UICollectionViewDataSource, UICollectionViewDe
         // Initialize the detail view controller with the ViewModel
         let detailVC = ArtifactDetailViewController(viewModel: detailViewModel)
         
-        // Push the detail view controller onto the navigation stack
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ArtificatsCell.swift
+//  ArtifactsCell.swift
 //  AH-Demo
 //
 //  Created by Harsha on 20/01/2025.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-/// The `ArtifactsCell` is an UICollectionViewCell that is used to load the  artifacts image and its title.
+/// The `ArtifactsCell` is a UICollectionViewCell that is used to load the artifacts image and its title.
 class ArtifactsCell: UICollectionViewCell {
     static let reuseIdentifier = "ArtifactsCell"
     
-    /// image of the artifact
+    /// Image of the artifact
     private let artifactImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,7 +23,7 @@ class ArtifactsCell: UICollectionViewCell {
         return imageView
     }()
     
-    /// title of the artifact
+    /// Title of the artifact
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,9 +34,17 @@ class ArtifactsCell: UICollectionViewCell {
         return label
     }()
     
-    /// This propert is used to load the image `AsyncImageLoader`
+    /// Activity indicator to show loading state for the image
+    private let activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .medium)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.hidesWhenStopped = true
+        return indicator
+    }()
+    
+    /// Property to load the image using `AsyncImageLoader`
     private let imageLoader = AsyncImageLoader()
-    /// This propert is used to hold the current cell's image url
+    /// Property to hold the current cell's image URL
     private var currentImageUrl: URL?
     
     /// This method to intialise the cell with other ui comoponent
@@ -45,6 +53,7 @@ class ArtifactsCell: UICollectionViewCell {
         setupContentView()
         contentView.addSubview(artifactImageView)
         contentView.addSubview(titleLabel)
+        contentView.addSubview(activityIndicator)
         setupConstraints()
     }
     
@@ -82,23 +91,26 @@ class ArtifactsCell: UICollectionViewCell {
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
             titleLabel.heightAnchor.constraint(lessThanOrEqualTo: contentView.heightAnchor, multiplier: 0.25),
-            titleLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -5)
+            titleLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -5),
+            
+            // Activity Indicator Constraints (centered over the image view)
+            activityIndicator.centerXAnchor.constraint(equalTo: artifactImageView.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: artifactImageView.centerYAnchor)
         ])
     }
     
-    /// configure cell
+    /// Configures the cell with artifact data
     ///
-    /// This function receives artifacts as per respective indexpaht and updates the cell.
-    /// - Parameters:
-    ///   - artifact:is type of`ArtObject` to be loaded to cell.
-    /// - Returns: Nil
+    /// - Parameter artifact: The `ArtObject` to be displayed in the cell.
     func configure(with artifact: ArtObject) {
         titleLabel.text = artifact.title
         guard let imageUrl = URL(string: artifact.webImage?.url ?? "") else {
             artifactImageView.image = nil
+            activityIndicator.stopAnimating()
             return
         }
         currentImageUrl = imageUrl
+        activityIndicator.startAnimating()
         Task {
             do {
                 let image = try await imageLoader.loadImage(from: imageUrl)
@@ -108,12 +120,17 @@ class ArtifactsCell: UICollectionViewCell {
             } catch {
                 artifactImageView.image = UIImage(systemName: "photo")
             }
+            DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
+            }
         }
     }
     
+    /// Prepares the cell for reuse
     override func prepareForReuse() {
         super.prepareForReuse()
         artifactImageView.image = nil
         currentImageUrl = nil
+        activityIndicator.stopAnimating()
     }
 }

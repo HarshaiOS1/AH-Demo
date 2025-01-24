@@ -44,6 +44,12 @@
                 <a href="../Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewController.html">ArtifactDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ArtifactDetailViewModel.html">ArtifactDetailViewModel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ArtifactsCell.html">ArtifactsCell</a>
               </li>
               <li class="nav-group-task">
@@ -54,6 +60,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ErrorHandler.html">ErrorHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchArtifactDetailsUseCase.html">FetchArtifactDetailsUseCase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/FetchArtifactsUseCase.html">FetchArtifactsUseCase</a>
@@ -133,6 +142,12 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ArtifactDetailViewModelProtocol.html">ArtifactDetailViewModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FetchArtifactDetailsUseCaseProtocol.html">FetchArtifactDetailsUseCaseProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a>
               </li>
               <li class="nav-group-task">
@@ -151,6 +166,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/ArtObject.html">ArtObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ArtifactDetailModel.html">ArtifactDetailModel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ArtifactsModel.html">ArtifactsModel</a>
@@ -185,7 +203,15 @@
 
                 </div>
               </div>
-            
+            <p><code>FetchArtifactsUseCase</code> is responsible for fetching artifacts for a specific century and page.</p>
+
+<p>This use case orchestrates the fetching of artifacts by validating the input,
+applying business rules, and interacting with the repository to fetch data from the data layer.</p>
+
+<ul>
+<li>Conforms to: <code><a href="../Protocols/FetchArtifactsUseCaseProtocol.html">FetchArtifactsUseCaseProtocol</a></code></li>
+</ul>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -203,7 +229,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>The repository used for fetching artifact data.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -258,7 +285,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Executes the use case to fetch artifacts for a specific century and page.</p>
+
+<p>This method validates the input parameters, fetches artifacts from the repository,
+and returns them to the caller.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    An error if the century is invalid or if fetching from the repository fails.
+
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -268,6 +304,41 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>century</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The century for which artifacts are to be fetched. Must be between 16 and 20.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number for pagination.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A list of <code><a href="../Structs/ArtObject.html">ArtObject</a></code> objects corresponding to the requested century and page.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -276,7 +347,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-23)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-01-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
