@@ -226,8 +226,8 @@
 			children = (
 				3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */,
 				3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */,
-				3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */,
 				3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */,
+				3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

@@ -1,13 +1,8 @@
-/// `OverviewViewModel` is responsible for managing the UI state and data flow for the Overview screen.
-/// - Coordinates with the `FetchArtifactsUseCase` to fetch data for the specified century and page asynchronously.
-/// - Tracks the state of the UI like `currentPages` for pagination & Supports pagination for each section.
-/// - Captures and relays errors to the ViewController for display.
-/// - Transforms and prepares data for the UI, ensuring it is suitable for display.
-/// - Maintains a centralized data source to provide artifacts for the `UICollectionView`.
-///
+import Foundation
+
 class OverviewViewModel: OverviewViewModelProtocol {
     private let fetchArtifactsUseCase: FetchArtifactsUseCaseProtocol
-    /// data for the respecitve century of artifacts
+    /// Data source for artifacts, grouped by century.
     private(set) var dataSource: [Int: [ArtObject]] = [:]
     /// Tracks the current page for each century
     private var currentPages: [Int: Int] = [:]

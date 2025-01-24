@@ -12,11 +12,6 @@
     "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/AppDelegate.bc",
     "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/AppDelegate.o"
   },
-  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Data/Model/ArtifactsModel.swift" : {
-    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsModel.o",
-    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsModel.bc",
-    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsModel.o"
-  },
   "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Data/Network/NetworkError.swift" : {
     "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/NetworkError.o",
     "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/NetworkError.bc",
@@ -42,15 +37,55 @@
     "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/RijksAPIServiceProtocol.bc",
     "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/RijksAPIServiceProtocol.o"
   },
-  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Domain/UseCases/FetechArtifactsUseCases.swift" : {
-    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetechArtifactsUseCases.o",
-    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetechArtifactsUseCases.bc",
-    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetechArtifactsUseCases.o"
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Domain/Model/ArtifactDetailModel.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailModel.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailModel.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailModel.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Domain/Model/ArtifactsModel.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsModel.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsModel.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsModel.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Domain/UseCases/FetchArtifactDetailsUseCase.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactDetailsUseCase.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactDetailsUseCase.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactDetailsUseCase.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Domain/UseCases/FetchArtifactDetailsUseCaseProtocol.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactDetailsUseCaseProtocol.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactDetailsUseCaseProtocol.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactDetailsUseCaseProtocol.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Domain/UseCases/FetchArtifactsUseCase.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactsUseCase.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactsUseCase.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactsUseCase.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Domain/UseCases/FetchArtifactsUseCaseProtocol.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactsUseCaseProtocol.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactsUseCaseProtocol.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/FetchArtifactsUseCaseProtocol.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/ViewControllers/ArtifactDetailViewController.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewController.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewController.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewController.o"
   },
   "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/ViewControllers/OverviewViewController.swift" : {
     "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/OverviewViewController.o",
     "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/OverviewViewController.bc",
     "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/OverviewViewController.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/ViewModels/ArtifactDetailViewModel.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewModel.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewModel.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewModel.o"
+  },
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/ViewModels/ArtifactDetailViewModelProtocol.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewModelProtocol.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewModelProtocol.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactDetailViewModelProtocol.o"
   },
   "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/ViewModels/OverviewViewModel.swift" : {
     "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/OverviewViewModel.o",
@@ -62,10 +97,10 @@
     "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/OverviewViewModelProtocol.bc",
     "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/OverviewViewModelProtocol.o"
   },
-  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/Views/ArtificatsCell.swift" : {
-    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtificatsCell.o",
-    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtificatsCell.bc",
-    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtificatsCell.o"
+  "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/Views/ArtifactsCell.swift" : {
+    "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsCell.o",
+    "llvm-bc" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsCell.bc",
+    "object" : "/Users/harsha/Documents/Github/AH-Demo/build/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/ArtifactsCell.o"
   },
   "/Users/harsha/Documents/Github/AH-Demo/AH-Demo/Presentation/Views/CenturyHeader.swift" : {
     "index-unit-output-path" : "/AH-Demo.build/Release-iphoneos/AH-Demo.build/Objects-normal/arm64/CenturyHeader.o",
