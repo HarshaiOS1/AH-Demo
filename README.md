@@ -9,7 +9,7 @@ Testing : Added Unit test cases for view model to test important logics.
 
 **Features**
 
-1. **Overview Page ** : Artifacts of specific century are fetched using `Rijks Museum API` and displayed in colletion view, with `pagination` enabled.
+1. **Overview Page** : Artifacts of specific century are fetched using `Rijks Museum API` and displayed in colletion view, with `pagination` enabled.
 
 2. **Artifact Detail** : User can select an artifact and look into its details
 
