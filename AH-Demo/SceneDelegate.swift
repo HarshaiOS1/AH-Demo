@@ -11,17 +11,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    ///`OverviewViewController` Initiated the window scene with new root set to OverviewViewController wrapped in NavigationController
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
-        //Initiated the window scene with new root set to viewcontroller
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        
+        /// Create dependencies
+        let apiService = RijksAPIService() // Data Layer: API service
+        let repository = RijksRepository(apiService: apiService) // Data Layer: Repository
+        let fetchArtifactsUseCase = FetchArtifactsUseCase(repository: repository) // Domain Layer: Use Case
+        let viewModel = OverviewViewModel(fetchArtifactsUseCase: fetchArtifactsUseCase) // Presentation Layer: ViewModel
+        
+        /// Initialize the root view controller
+        let overviewViewController = OverviewViewController(viewModel: viewModel)
+        
+        /// Wrap it in a NavigationController
+        let navigationController = UINavigationController(rootViewController: overviewViewController)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 

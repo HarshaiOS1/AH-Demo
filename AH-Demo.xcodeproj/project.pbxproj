@@ -9,12 +9,38 @@
 /* Begin PBXBuildFile section */
 		3A0EB0682D3D94C100B4FA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0672D3D94C100B4FA73 /* AppDelegate.swift */; };
 		3A0EB06A2D3D94C100B4FA73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0692D3D94C100B4FA73 /* SceneDelegate.swift */; };
-		3A0EB06C2D3D94C100B4FA73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB06B2D3D94C100B4FA73 /* ViewController.swift */; };
+		3A0EB06C2D3D94C100B4FA73 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB06B2D3D94C100B4FA73 /* OverviewViewController.swift */; };
 		3A0EB0712D3D94C200B4FA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0702D3D94C200B4FA73 /* Assets.xcassets */; };
 		3A0EB0742D3D94C200B4FA73 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3A0EB0732D3D94C200B4FA73 /* Base */; };
 		3A0EB07F2D3D94C200B4FA73 /* AH_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB07E2D3D94C200B4FA73 /* AH_DemoTests.swift */; };
 		3A0EB0892D3D94C200B4FA73 /* AH_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0882D3D94C200B4FA73 /* AH_DemoUITests.swift */; };
 		3A0EB08B2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB08A2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift */; };
+		3A0EB09E2D3E903100B4FA73 /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */; };
+		3A0EB0A12D3E906E00B4FA73 /* ArtifactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A02D3E906E00B4FA73 /* ArtifactsCell.swift */; };
+		3A0EB0A32D3E90AC00B4FA73 /* ArtifactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A22D3E90AC00B4FA73 /* ArtifactsModel.swift */; };
+		3A0EB0A52D3E913300B4FA73 /* RijksAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A42D3E913300B4FA73 /* RijksAPIService.swift */; };
+		3A0EB0A92D3E916700B4FA73 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0A82D3E916700B4FA73 /* NetworkError.swift */; };
+		3A0EB0AB2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */; };
+		3A0EB0AD2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */; };
+		3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */; };
+		3A0EB0B32D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B22D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift */; };
+		3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */; };
+		3A0EB0B92D3FBDB100B4FA73 /* CenturyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */; };
+		3A70852E2D3FC38500FF19E9 /* RijksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */; };
+		3A7085302D3FC39200FF19E9 /* RijksRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */; };
+		3A7085322D40457000FF19E9 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085312D40457000FF19E9 /* ErrorHandler.swift */; };
+		3A7085352D412B9D00FF19E9 /* MockRijksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */; };
+		3A7085392D412BDE00FF19E9 /* MockRijksAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */; };
+		3A70853E2D412C4600FF19E9 /* OverviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */; };
+		3A7085402D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */; };
+		3A7085422D42946400FF19E9 /* ArtifactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085412D42946400FF19E9 /* ArtifactDetailViewController.swift */; };
+		3A7085442D42998100FF19E9 /* ArtifactDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085432D42998100FF19E9 /* ArtifactDetailModel.swift */; };
+		3A7085462D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085452D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift */; };
+		3A7085482D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */; };
+		3A70854A2D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */; };
+		3A70854C2D429AB000FF19E9 /* ArtifactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */; };
+		3AD4A7AD2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4A7AC2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift */; };
+		3AD4A7B12D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4A7B02D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +64,7 @@
 		3A0EB0642D3D94C100B4FA73 /* AH-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AH-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0EB0672D3D94C100B4FA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A0EB0692D3D94C100B4FA73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A0EB06B2D3D94C100B4FA73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A0EB06B2D3D94C100B4FA73 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		3A0EB0702D3D94C200B4FA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0EB0732D3D94C200B4FA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0EB0752D3D94C200B4FA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +73,32 @@
 		3A0EB0842D3D94C200B4FA73 /* AH-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AH-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0EB0882D3D94C200B4FA73 /* AH_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AH_DemoUITests.swift; sourceTree = "<group>"; };
 		3A0EB08A2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AH_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
+		3A0EB0A02D3E906E00B4FA73 /* ArtifactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsCell.swift; sourceTree = "<group>"; };
+		3A0EB0A22D3E90AC00B4FA73 /* ArtifactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsModel.swift; sourceTree = "<group>"; };
+		3A0EB0A42D3E913300B4FA73 /* RijksAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksAPIService.swift; sourceTree = "<group>"; };
+		3A0EB0A82D3E916700B4FA73 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelProtocol.swift; sourceTree = "<group>"; };
+		3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
+		3A0EB0B22D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactsUseCase.swift; sourceTree = "<group>"; };
+		3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenturyHeader.swift; sourceTree = "<group>"; };
+		3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksRepository.swift; sourceTree = "<group>"; };
+		3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RijksRepositoryProtocol.swift; sourceTree = "<group>"; };
+		3A7085312D40457000FF19E9 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRijksRepository.swift; sourceTree = "<group>"; };
+		3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRijksAPIService.swift; sourceTree = "<group>"; };
+		3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModelTests.swift; sourceTree = "<group>"; };
+		3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3A7085412D42946400FF19E9 /* ArtifactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewController.swift; sourceTree = "<group>"; };
+		3A7085432D42998100FF19E9 /* ArtifactDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailModel.swift; sourceTree = "<group>"; };
+		3A7085452D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactDetailsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchArtifactDetailsUseCase.swift; sourceTree = "<group>"; };
+		3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModel.swift; sourceTree = "<group>"; };
+		3AD4A7AC2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactDetailViewModelTests.swift; sourceTree = "<group>"; };
+		3AD4A7B02D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchArtifactDetailsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +151,10 @@
 			children = (
 				3A0EB0672D3D94C100B4FA73 /* AppDelegate.swift */,
 				3A0EB0692D3D94C100B4FA73 /* SceneDelegate.swift */,
-				3A0EB06B2D3D94C100B4FA73 /* ViewController.swift */,
+				3A0EB0982D3E8C0800B4FA73 /* Data */,
+				3A0EB0B12D3E923100B4FA73 /* Domain */,
+				3A0EB0972D3E850300B4FA73 /* Presentation */,
+				3A0EB0AE2D3E91F600B4FA73 /* Utils */,
 				3A0EB0702D3D94C200B4FA73 /* Assets.xcassets */,
 				3A0EB0722D3D94C200B4FA73 /* LaunchScreen.storyboard */,
 				3A0EB0752D3D94C200B4FA73 /* Info.plist */,
@@ -110,6 +165,10 @@
 		3A0EB07D2D3D94C200B4FA73 /* AH-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A70853B2D412C1700FF19E9 /* PresentaionTests */,
+				3AD4A7AE2D42DD0B008CC9B3 /* Domain */,
+				3A7085372D412BCC00FF19E9 /* MockService */,
+				3A7085332D412B8300FF19E9 /* MockRepository */,
 				3A0EB07E2D3D94C200B4FA73 /* AH_DemoTests.swift */,
 			);
 			path = "AH-DemoTests";
@@ -122,6 +181,161 @@
 				3A0EB08A2D3D94C200B4FA73 /* AH_DemoUITestsLaunchTests.swift */,
 			);
 			path = "AH-DemoUITests";
+			sourceTree = "<group>";
+		};
+		3A0EB0972D3E850300B4FA73 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB09F2D3E904400B4FA73 /* Views */,
+				3A0EB09C2D3E901D00B4FA73 /* ViewModels */,
+				3A0EB09B2D3E901100B4FA73 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3A0EB0982D3E8C0800B4FA73 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A62D3E913D00B4FA73 /* Service */,
+				3A70852C2D3FC36400FF19E9 /* Repositories */,
+				3A0EB0A72D3E915000B4FA73 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A0EB09A2D3E8C3000B4FA73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A22D3E90AC00B4FA73 /* ArtifactsModel.swift */,
+				3A7085432D42998100FF19E9 /* ArtifactDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A0EB09B2D3E901100B4FA73 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB06B2D3D94C100B4FA73 /* OverviewViewController.swift */,
+				3A7085412D42946400FF19E9 /* ArtifactDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3A0EB09C2D3E901D00B4FA73 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB09D2D3E903100B4FA73 /* OverviewViewModel.swift */,
+				3A0EB0AC2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift */,
+				3A70854B2D429AB000FF19E9 /* ArtifactDetailViewModel.swift */,
+				3A7085492D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3A0EB09F2D3E904400B4FA73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A02D3E906E00B4FA73 /* ArtifactsCell.swift */,
+				3A0EB0B82D3FBDB100B4FA73 /* CenturyHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A0EB0A62D3E913D00B4FA73 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A42D3E913300B4FA73 /* RijksAPIService.swift */,
+				3A0EB0AA2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3A0EB0A72D3E915000B4FA73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0A82D3E916700B4FA73 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3A0EB0AE2D3E91F600B4FA73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0B72D3EE7FE00B4FA73 /* Extensions */,
+				3A0EB0AF2D3E921200B4FA73 /* ImageCacheLoader.swift */,
+				3A0EB0B52D3EE7F200B4FA73 /* Constants.swift */,
+				3A7085312D40457000FF19E9 /* ErrorHandler.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3A0EB0B12D3E923100B4FA73 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB09A2D3E8C3000B4FA73 /* Model */,
+				3A0EB0B42D3EE7A500B4FA73 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3A0EB0B42D3EE7A500B4FA73 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3A0EB0B22D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift */,
+				3A70853F2D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift */,
+				3A7085452D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift */,
+				3A7085472D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3A0EB0B72D3EE7FE00B4FA73 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A70852C2D3FC36400FF19E9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3A70852D2D3FC38500FF19E9 /* RijksRepository.swift */,
+				3A70852F2D3FC39200FF19E9 /* RijksRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3A7085332D412B8300FF19E9 /* MockRepository */ = {
+			isa = PBXGroup;
+			children = (
+				3A7085342D412B9D00FF19E9 /* MockRijksRepository.swift */,
+			);
+			path = MockRepository;
+			sourceTree = "<group>";
+		};
+		3A7085372D412BCC00FF19E9 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				3A7085382D412BDE00FF19E9 /* MockRijksAPIService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		3A70853B2D412C1700FF19E9 /* PresentaionTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A70853C2D412C4600FF19E9 /* OverviewViewModelTests.swift */,
+				3AD4A7AC2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift */,
+			);
+			path = PresentaionTests;
+			sourceTree = "<group>";
+		};
+		3AD4A7AE2D42DD0B008CC9B3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3AD4A7B02D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +468,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0EB06C2D3D94C100B4FA73 /* ViewController.swift in Sources */,
+				3A0EB0AB2D3E919700B4FA73 /* RijksAPIServiceProtocol.swift in Sources */,
+				3A0EB0B92D3FBDB100B4FA73 /* CenturyHeader.swift in Sources */,
+				3A0EB06C2D3D94C100B4FA73 /* OverviewViewController.swift in Sources */,
+				3A7085462D429A4C00FF19E9 /* FetchArtifactDetailsUseCaseProtocol.swift in Sources */,
+				3A0EB0A92D3E916700B4FA73 /* NetworkError.swift in Sources */,
+				3A70854A2D429A8B00FF19E9 /* ArtifactDetailViewModelProtocol.swift in Sources */,
+				3A0EB0A12D3E906E00B4FA73 /* ArtifactsCell.swift in Sources */,
+				3A0EB0B32D3EE79F00B4FA73 /* FetchArtifactsUseCase.swift in Sources */,
+				3A7085482D429A5D00FF19E9 /* FetchArtifactDetailsUseCase.swift in Sources */,
+				3A7085322D40457000FF19E9 /* ErrorHandler.swift in Sources */,
+				3A0EB09E2D3E903100B4FA73 /* OverviewViewModel.swift in Sources */,
 				3A0EB0682D3D94C100B4FA73 /* AppDelegate.swift in Sources */,
+				3A0EB0B62D3EE7F200B4FA73 /* Constants.swift in Sources */,
+				3A7085422D42946400FF19E9 /* ArtifactDetailViewController.swift in Sources */,
 				3A0EB06A2D3D94C100B4FA73 /* SceneDelegate.swift in Sources */,
+				3A0EB0AD2D3E91DB00B4FA73 /* OverviewViewModelProtocol.swift in Sources */,
+				3A70852E2D3FC38500FF19E9 /* RijksRepository.swift in Sources */,
+				3A0EB0A32D3E90AC00B4FA73 /* ArtifactsModel.swift in Sources */,
+				3A7085302D3FC39200FF19E9 /* RijksRepositoryProtocol.swift in Sources */,
+				3A7085442D42998100FF19E9 /* ArtifactDetailModel.swift in Sources */,
+				3A0EB0B02D3E921200B4FA73 /* ImageCacheLoader.swift in Sources */,
+				3A70854C2D429AB000FF19E9 /* ArtifactDetailViewModel.swift in Sources */,
+				3A7085402D427CAD00FF19E9 /* FetchArtifactsUseCaseProtocol.swift in Sources */,
+				3A0EB0A52D3E913300B4FA73 /* RijksAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +499,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7085392D412BDE00FF19E9 /* MockRijksAPIService.swift in Sources */,
+				3AD4A7B12D42DD23008CC9B3 /* MockFetchArtifactDetailsUseCase.swift in Sources */,
+				3A70853E2D412C4600FF19E9 /* OverviewViewModelTests.swift in Sources */,
+				3AD4A7AD2D42D8E9008CC9B3 /* ArtifactDetailViewModelTests.swift in Sources */,
 				3A0EB07F2D3D94C200B4FA73 /* AH_DemoTests.swift in Sources */,
+				3A7085352D412B9D00FF19E9 /* MockRijksRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
